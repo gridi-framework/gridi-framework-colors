@@ -1,0 +1,5 @@
+@each $palette-color-prefix, $palette-color-variables in get-colors-palette($colors-extra-colors-palette, $colors-skip-colors-palette) {
+    .#{$colors-class-prefix}-#{$palette-color-prefix} {
+        color: map-get($palette-color-variables, color);
+    }
+}
